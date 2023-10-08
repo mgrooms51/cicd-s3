@@ -1,0 +1,4 @@
+aws s3api create-bucket --bucket bucketname --region your region
+aws s3api delete-public-access-block --bucket bucketname
+aws s3api delete-bucket-ownership-controls --bucket bucketname
+aws s3 cp filename.txt s3://bucket-name --acl public-read
